@@ -1,15 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://kit-pro.fontawesome.com/releases/v5.15.3/css/pro.min.css"
+      rel="stylesheet"
+    />
     <title>Ultimate Battle 2021</title>
-</head>
-<body>
+  </head>
+  <body>
+    <!--Landing page starts here  -->
+
+    <section class="landing">
+      <!-- Navbar -->
+      <navbar class="nav">
+        <h1 class="logo"><a href="./index.html">ULTIMATE</a></h1>
+        <ul>
+          <li><a href="#" class="current">Home</a></li>
+          <li><a href="#">Prizes</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li>
+            <button class="event-btn">
+              <a href="#">Events</a>
+            </button>
+          </li>
+        </ul>
+      </navbar>
+      <!-- Header -->
+      <header class="header">
+        <h1>ULTIMATE TOURNAMENT FOR GAMERS</h1>
+        <p>
+          Compete and win games to get prizes like never before, $0 registration
+          fees
+        </p>
+        <button class="register-btn glow-on-hover">Register</button>
+      </header>
+    </section>
+    <!--Landing page ends here  -->
+
+    <!--events page starts here-->
+    <section class="events">
+      <div class="container">
+        <!-- row1 starts -->
+        <div class="row1">
+          <div class="img1 event-img"></div>
+          <div class="info">
+            <h3 class="title">Play 5v5 battle tournamet</h3>
+            <p class="text">
+              Ready to take on opponents with different skills and flex your
+              skins?
+            </p>
+            <p class="time">
+              Date: 26 - 06 - 2021
+              <br />
+              <br />
+              Time: 4:00pm IST
+            </p>
+            <p class="venue">Venue: Valobaaji-VC @Ultimate-Discord</p>
+          </div>
+        </div>
+        <!-- row1 ends -->
+        <!-- row2 starts -->
+        <div class="row2">
+          <div class="info">
+            <h3 class="title">Play 1 vs 99 battle tournamet</h3>
+            <p class="text">
+              Fight against decisive battle against 99 players and reclaim your
+              glory <br />
+              and also the chicken dinner!
+            </p>
+            <p class="time">
+              Date: 27 - 06 - 2021
+              <br />
+              <br />
+              Time: 2:00pm IST
+            </p>
+            <p class="venue">Venue: JaiPubg-VC @Ultimate-Discord</p>
+          </div>
+          <div class="img2 event-img"></div>
+        </div>
+        <!-- row2 ends -->
+        <!-- row3 starts -->
+        <div class="row3">
+          <div class="img3 event-img"></div>
+          <div class="info">
+            <h3 class="title">Play 5v5 battle tournamet</h3>
+            <p class="text">
+              Take part in the classic battle of cs:go and win exciting prizes
+            </p>
+            <p class="time">
+              Date: 28 - 06 - 2021
+              <br />
+              <br />
+              Time: 6:00pm IST
+            </p>
+            <p class="venue">Venue: PiroPlayers-VC @Ultimate-Discord</p>
+          </div>
+        </div>
+        <!-- row3 ends -->
+      </div>
+    </section>
+    <!--events page ends here-->
+
+    <!--Prizes Section Starts Here -->
+    <section class="prizes">
+      <!--transparent rectangle-->
+      <!-- <div class="rect"></div> -->
+      <div class="prize-boxes">
+        <!-- <div class="box">
+          <img class="prize-img1" src="./images/prizes-02.svg" alt="first prize" />
+          <img class="prize-img2" src="./images/prizes-01.svg" alt="second prize" />
+          <img class="prize-img3" src="./images/prizes-03.svg" alt="third prize" />
+        </div> -->
+        <img src="./images/gifs5.gif" alt="" style="width: 800px; height: 800px;">
+
+      </div>
+      <div class="heading">
+        <h2>WIN ULTIMATE PRIZES IN ULTIMATE BATTLES</h2>
+      </div>
+      <div class="inner">
+        <img class="tin-bande" src="./images/leader3.png" alt="animated leader image" />
+      </div>
+    </section>
+    <!-- Prizes Section Ends Here -->
+    <!-- Register Section Starts Here -->
+    <section class="register-section">
+      <div class="regi-container">
+        <h1>Are you ready now?</h1>
+        <form>
+          <div class="form-heading">
+            <h1>Register</h1>
+            <span class="cross-icon"><i class="far fa-times"></i></span>
+          </div>
+          <div class="input-container">
+            <input type="text" id="name" required>
+            <label for="name">Name:</label>
+          </div>
+          <div class="input-container">
+            <input type="text" id="gname" required >
+            <label for="gname">Gamer-Name:</label>
+          </div>
+          <div class="input-container">
+            <input class="email" type="type" id="email" required >
+            <label for="email">Email:</label>
+          </div>
+          <div class="select-container">
+            <label for="game" >Select your game</label>
+            <br>
+            <select id="game" name="Game">
+              <option vlaue="Valorant">Valorant</option>
+              <option vlaue="Pubg">PUBG</option>
+              <option vlaue="Call Of Duty">Call of Duty</option>
+            </select>  
+            <br>
+          <div class="input-container">
+            <button class="submitBtn">Submit</button>
+          </div>
+          </div>
+        </form>
+      </div>
+    </section>
+<!-- Register Section Ends Here -->
+    
+    <footer class="footer">
+        <div class="main-box">
+            <div class="game-logos">
+                <ul>
+                    <li class="games"><img src="./images/pubg-logo.svg" alt="" style="width: 80px;"></li>
+                    <li class="games"><img src="./images/valorant-logo.svg" alt="" style="width: 80px;"></li>
+                    <li class="games"><img src="./images/call-of-duty-logo.svg" alt="" style="width: 100px;"></li>
+                    <!-- <li class="games"><img src="./images/csgo-logo.svg" alt="" style="width: 200px;"></li> -->
+                </ul>
+            </div>
+
+            <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+            <div class="wrapper">
+                <ul>
+                    <li class="facebook"><a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+                    <li class="twitter"><a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+                    <li class="instagram"><a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+                    <li class="google"><a href="#"><i class="fa fa-google fa-2x" aria-hidden="true"></i></a></li>
+                    <li class="whatsapp"><a href="#"><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="outer-footer">
+          Copyright &copy; Team ULTIMATE. All Rights Reserved
+          
+        </div>
+    </footer> 
+    </body>
     
 
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>

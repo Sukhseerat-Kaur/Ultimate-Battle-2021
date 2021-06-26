@@ -1,0 +1,643 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  transition: all 0.6s;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/***** LANDING PAGE STARTS *****/
+
+.landing {
+  height: 100vh;
+  background: url("./images/landing-page-1\ 1.png") no-repeat;
+  background-position: top bottom;
+  background-size: cover;
+  position: relative;
+}
+
+.header {
+  position: absolute;
+  left: 25%;
+  top: 55%;
+  width: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  margin-left: 20px;
+}
+
+.header h1 {
+  margin-left: 0.6em;
+  font-size: 44px;
+  line-height: 64px;
+}
+
+.header p {
+  margin-left: 0.8em;
+  font-size: 30px;
+  line-height: 44px;
+  font-weight: 400;
+}
+
+.header button {
+  margin-left: 1em;
+  width: 200px;
+  height: 80px;
+  padding: 10px 15px;
+  font-size: 25px;
+  background-color: #c94b4b;
+  text-transform: uppercase;
+}
+
+.header button:active {
+  transform: scale(0.98);
+  color: white;
+}
+/* Navbar Starts*/
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  z-index: 2;
+}
+
+.nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav li {
+  cursor: pointer;
+}
+
+.logo {
+  letter-spacing: 3px;
+  margin-left: 0.2em;
+  cursor: pointer;
+}
+
+.nav a {
+  text-decoration: none;
+  padding: 7px 20px;
+  font-size: 20px;
+}
+
+.logo a {
+  font-size: 32px;
+}
+
+.event-btn {
+  background-color: #c94b4b;
+  margin-left: 20px;
+  margin-right: 24px;
+  transition: 0.3s;
+}
+
+.event:active {
+  transform: scale(0.98);
+}
+
+.registerBtn:active {
+  transform: scale(0.98);
+}
+
+/* Navbar Ends */
+
+/***** LANDING PAGE ENDS *****/
+
+/***** Prizes page starts *****/
+.prizes {
+  height: 120vh;
+  /* background: url(./images/common-bg\ 1.png) no-repeat center center/cover; */
+  background-color: #923cb5;
+  background-image: linear-gradient(147deg, #410829 0%, #052e30 80%);
+  position: relative;
+}
+
+.prizes .inner {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 40px;
+  position: absolute;
+  top: 0;
+}
+
+.tin-bande {
+  margin-top: 100px;
+  height: 750px;
+  justify-self: flex-end;
+}
+
+.prizes .heading {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 4px;
+  font-size: 24px;
+}
+
+.prizes .heading .h2 {
+  width: 10%;
+}
+
+.prizes .rect {
+  background: rgba(253, 174, 101, 0.3);
+  width: 400px;
+  height: 100%;
+}
+
+.prizes .prize-boxes {
+  position: absolute;
+  bottom: 0;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 80%;
+}
+
+.trophy {
+  font-size: 50px;
+}
+
+.prizes .prize-boxes .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 170px;
+  border-radius: 40px;
+}
+
+.prizes .prize-boxes .box img {
+  width: 300px;
+  height: 330px;
+}
+
+.prize-img3 {
+  justify-self: flex-end;
+}
+
+/***** Prizes page ends *****/
+
+/* ********events page starts****** */
+.events {
+  height: 120vh;
+  /* background: rgb(6, 4, 29);
+  background: linear-gradient(
+    90deg,
+    rgba(6, 4, 29, 1) 0%,
+    rgba(77, 5, 37, 0.9) 12%,
+    rgba(24, 33, 42, 1) 41%,
+    rgba(24, 33, 42, 1) 62%,
+    rgba(10, 39, 36, 1) 87%,
+    rgba(6, 6, 38, 1) 100%
+  ); */
+
+  /* background-color: #000000;
+  background-color: #0e161f; */
+  background: rgb(93, 13, 13);
+  background: linear-gradient(
+    135deg,
+    rgb(116, 20, 20) 0%,
+    rgba(21, 39, 78, 1) 85%
+  );
+
+  /* background-image: linear-gradient(147deg, #166d3b 0%, #000000 74%); */
+  /* background-image: linear-gradient(147deg, #000000 0%, #434343 74%); */
+  /* background-image: url(./images/red\ background.jpg); */
+}
+
+/* .container img {
+  filter: blur(5px);
+} */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+}
+
+.row1,
+.row2,
+.row3 {
+  margin-top: 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.event-img {
+  width: 350px;
+  height: 200px;
+  border-radius: 8px;
+  box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.row1 .img1 {
+  background: url("./images/event-valorant.png") no-repeat center center/cover;
+}
+
+.row2 .img2 {
+  background: url("./images/photo-1564049489314-60d154ff107d\ 1.png") no-repeat
+    center center/cover;
+}
+
+.row3 .img3 {
+  background: url("./images/event-call-of-duty.png") no-repeat center
+    center/cover;
+}
+
+.text {
+  line-height: 22px;
+}
+
+.glow-on-hover {
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.glow-on-hover:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000;
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+/* Register section starts */
+
+.register-section {
+  width: 100%;
+  height: 100vh;
+  display: none;
+}
+
+.register-pop-up {
+  position: fixed;
+  top: 0;
+  display: block;
+  background: rgba(0, 0, 0, 0.93);
+  z-index: 50;
+}
+
+.regi-container {
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  background-color: rgba(110, 108, 108, 0.5);
+  padding: 30px;
+  color: #000;
+  position: relative;
+}
+
+.form-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cross-icon i {
+  font-size: 24px;
+  font-weight: 700;
+  color: #c94b4b;
+}
+
+.cross-icon i:hover {
+  animation: swirl 0.3s infinite linear;
+}
+
+@keyframes swirl {
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+.cross-icon {
+  cursor: pointer;
+}
+
+.input-container {
+  position: relative;
+  margin: 30px 0 40px;
+  width: 300px;
+}
+
+input {
+  cursor: pointer;
+  background-color: #000;
+  display: block;
+  font-size: 22px;
+  margin-top: 20px;
+  background: transparent;
+  color: rgb(35, 220, 233);
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #fff;
+  z-index: 2;
+}
+
+.input-container label {
+  position: absolute;
+  top: 5px;
+  left: 0px;
+}
+
+.input-container label span {
+  display: inline-block;
+  background-color: transparent;
+  font-size: 18px;
+  min-width: 5px;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.input-container input:focus + label span,
+.input-container input:valid + label span {
+  color: #fff;
+  transform: translateY(-30px);
+}
+
+.select-container select {
+  margin-top: 16px;
+  padding-left: 8px;
+  width: 100%;
+  height: 30px;
+  font-size: 18px;
+  appearance: none;
+  background: url(https://image.flaticon.com/icons/png/512/32/32195.png) 96% /
+    8% no-repeat #333;
+  color: #fff;
+  outline: none;
+  border: 0;
+}
+
+.select-container select option {
+  outline: none;
+  border: 0;
+}
+
+.submitBtn {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #c94b4b;
+}
+
+/* footer */
+footer {
+  background-color: #4f5050;
+}
+.main-box {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.game-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+.game-logos ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.games {
+  list-style: none;
+}
+
+.games img {
+  padding: 10px 20px;
+  height: 100px;
+  width: 200px;
+}
+
+/******social-icons******/
+
+.wrapper ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+/* Style the list items inside the UL list, by setting its width, height and line-height 
+  and float them to left and set its border and border-radius.
+ */
+.wrapper ul li {
+  width: 50px;
+  height: 50px;
+  line-height: 55px;
+  margin: 0 8px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 3px solid #d8e2dc;
+  float: left;
+  transition: all 0.5s ease;
+}
+
+/* Style the icons by setting its color and margin-top value to 20px 
+to align it properly */
+.wrapper ul li .fa {
+  color: #d8e2dc;
+  margin-top: 0px;
+  transition: all 0.5s ease;
+}
+
+/* Now target the specific li classes for styling and use box-shadow effect to border and text-shadow effect
+  to icons for glowing effect and use transition property for smooth transition effect. */
+/*facebook*/
+.wrapper ul li:hover.facebook {
+  border: 5px solid #3b5998;
+  box-shadow: 0 0 15px #3b5998;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-facebook {
+  color: #3b5998;
+  text-shadow: 0 0 15px #3b5998;
+  transition: all 0.5s ease;
+}
+
+/*twitter*/
+.wrapper ul li:hover.twitter {
+  border: 5px solid #00aced;
+  box-shadow: 0 0 15px #00aced;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-twitter {
+  color: #00aced;
+  text-shadow: 0 0 15px #00aced;
+  transition: all 0.5s ease;
+}
+
+/* instagram */
+.wrapper ul li:hover.instagram {
+  border: 5px solid #bc2a8d;
+  box-shadow: 0 0 15px #bc2a8d;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-instagram {
+  color: #bc2a8d;
+  text-shadow: 0 0 15px #bc2a8d;
+  transition: all 0.5s ease;
+}
+
+/* google */
+.wrapper ul li:hover.google {
+  border: 5px solid #dd4b39;
+  box-shadow: 0 0 15px #dd4b39;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-google {
+  color: #dd4b39;
+  text-shadow: 0 0 15px #dd4b39;
+  transition: all 0.5s ease;
+}
+
+/* whatsapp */
+.wrapper ul li:hover.whatsapp {
+  border: 5px solid #4dc247;
+  box-shadow: 0 0 15px #4dc247;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-whatsapp {
+  color: #4dc247;
+  text-shadow: 0 0 15px #4dc247;
+  transition: all 0.5s ease;
+}
+
+/*end*/
+/* .riotbar-footer-content > div {
+  margin: 40px auto;
+}
+
+.riotbar-legal-links {
+  font-family: "FF Mark W05";
+  font-weight: 500;
+  font-size: 12px;
+  color: #7e7e7e;
+  text-align: center;
+}
+.riotbar-legal-links {
+  user-select: none;
+  box-sizing: border-box;
+}
+.riotbar-legal-links ul {
+  .riotbar-legal-links;
+} */
+
+.outer-footer {
+  padding: 10px;
+  text-align: center;
+  color: black;
+  font-size: 13px;
+  background-color: #3f3f3f;
+}
