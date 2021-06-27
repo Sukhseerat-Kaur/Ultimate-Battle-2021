@@ -356,6 +356,7 @@ nav a {
   flex-wrap: wrap;
   font-size: 20px;
 }
+
 .prizes .content .inner h3 {
   font-size: 28px;
   font-weight: normal;
@@ -387,6 +388,33 @@ nav a {
 .prizes .register-btn:active {
   color: #fff;
   transform: scale(0.98);
+}
+.prizes .content .inner h3 {
+  font-size: 28px;
+  font-weight: normal;
+}
+
+.prizes .content .inner ul {
+  line-height: 60px;
+  padding-left: 60px;
+}
+
+.prizes .content .inner ul {
+  list-style: none;
+  font-style: italic;
+}
+
+.prizes .content .inner ul li {
+  font-size: 25px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.prizes .for-small-screen {
+  display: none;
+}
+
+.prizes .register-btn {
+  width: max-content;
 }
 
 /***** Prizes page ends *****/
