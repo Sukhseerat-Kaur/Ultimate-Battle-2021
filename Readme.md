@@ -1,5 +1,7 @@
 # ULTIMATE BATTLE 2021
 
+[Link to the website](https://sukhseerat-kaur.github.io/Ultimate-Battle-2021/)
+
 ---
 
 ### TABLE OF CONTENTS
