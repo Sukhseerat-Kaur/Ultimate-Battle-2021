@@ -526,6 +526,7 @@ nav a {
   align-items: center;
   justify-content: center;
   background-image: linear-gradient(147deg, #410829 0%, #052e30 80%);
+  padding: 0 20px;
 }
 
 .regi-container {
@@ -1066,7 +1067,4 @@ to align it properly */
     width: 200px;
     height: 200px;
   }
-
-  /* .prizes {
-  } */
 }
