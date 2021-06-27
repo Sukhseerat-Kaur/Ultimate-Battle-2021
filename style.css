@@ -845,6 +845,23 @@ to align it properly */
     width: max-content;
   }
 
+  .prizes .content .inner {
+    width: 80%;
+  }
+
+  .prizes .content .inner ul {
+    width: 100%;
+    padding-left: 0 !important;
+    list-style-type: square;
+    list-style-position: inside;
+  }
+
+  .prizes .content .inner ul li {
+    line-height: 30px;
+    width: 100%;
+    font-size: 18px !important;
+  }
+
   /* prizes ends */
 }
 
@@ -1049,7 +1066,6 @@ to align it properly */
     height: 200px;
   }
 
-  .prizes .inner ul {
-    padding-left: 0;
-  }
+  /* .prizes {
+  } */
 }
