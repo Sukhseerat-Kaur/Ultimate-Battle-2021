@@ -863,6 +863,27 @@ to align it properly */
   }
 
   /* prizes ends */
+
+  .events {
+    height: max-content;
+    padding-top: 36px;
+  }
+
+  .row1,
+  .row2,
+  .row3 {
+    flex-direction: column;
+  }
+
+  .row2 .hide-on-large {
+    display: block;
+  }
+
+  .row2 .hide-on-small {
+    display: none;
+  }
+
+  /* events ends*/
 }
 
 @media (max-width: 700px) {
@@ -907,26 +928,6 @@ to align it properly */
   /* landing ends*/
   /* events start*/
 
-  .events {
-    height: max-content;
-    padding-top: 36px;
-  }
-
-  .row1,
-  .row2,
-  .row3 {
-    flex-direction: column;
-  }
-
-  .row2 .hide-on-large {
-    display: block;
-  }
-
-  .row2 .hide-on-small {
-    display: none;
-  }
-
-  /* events ends*/
   /* prizes start*/
 
   .prizes .prize-boxes .gif {
