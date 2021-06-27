@@ -337,48 +337,53 @@ nav a {
 }
 
 .prizes .content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.prizes .content .card {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  margin: 2em auto;
+  box-shadow: -1em 1em 3em 0.2em rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease;
+}
+
+.prizes .content .card:hover {
+  transform: scale(1.1) rotateZ(6deg);
+}
+
+.prizes .content .card-2:hover {
+  transform: scale(1.1) rotateZ(-6deg);
+}
+
+.prizes .content .card-2 {
+  width: 25%;
+}
+
+.prizes .content .card img {
+  display: block;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   width: 100%;
-  display: flex;
+  height: 250px;
+  object-fit: cover;
+  box-shadow: -1em 1em 2em 0.25em rgba(0, 0, 0, 0.2);
 }
 
-.prizes .content .prize-boxes {
-  width: 40%;
-  height: 100%;
-  display: flex;
-  margin: 32px 0;
-  flex-direction: column;
+.prizes .content .card .prize-text {
+  text-align: center;
+  line-height: 30px;
 }
 
-.prizes .content .inner {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  font-size: 20px;
-}
-
-.prizes .content .inner h3 {
-  font-size: 28px;
-  font-weight: normal;
-}
-
-.prizes .content .inner ul {
-  line-height: 60px;
-  padding-left: 60px;
-}
-
-.prizes .content .inner ul {
-  list-style: none;
-  font-style: italic;
-}
-
-.prizes .content .inner ul li {
-  font-size: 25px;
-  font-family: "Courier New", Courier, monospace;
-}
-
-.prizes .for-small-screen {
-  display: none;
+.prizes .content .card .prize-text p {
+  margin: 20px;
 }
 
 .prizes .register-btn {
@@ -388,29 +393,6 @@ nav a {
 .prizes .register-btn:active {
   color: #fff;
   transform: scale(0.98);
-}
-.prizes .content .inner h3 {
-  font-size: 28px;
-  font-weight: normal;
-}
-
-.prizes .content .inner ul {
-  line-height: 60px;
-  padding-left: 60px;
-}
-
-.prizes .content .inner ul {
-  list-style: none;
-  font-style: italic;
-}
-
-.prizes .content .inner ul li {
-  font-size: 25px;
-  font-family: "Courier New", Courier, monospace;
-}
-
-.prizes .for-small-screen {
-  display: none;
 }
 
 .prizes .register-btn {
@@ -558,9 +540,8 @@ form {
 }
 
 .cross-icon i:hover {
-  animation: swirl 0.3s infinite linear;
+  animation: swirl 0.3s 1 linear;
 }
-
 @keyframes swirl {
   to {
     transform: rotate(180deg);
@@ -810,57 +791,13 @@ to align it properly */
     flex-direction: column;
     align-items: center;
   }
-  .prizes .prize-boxes {
-    margin-top: 0px;
+
+  .prizes .content .card {
     width: 70%;
-    height: max-content;
-  }
-
-  .prizes .inner {
-    width: 80%;
-  }
-
-  .prizes .inner h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
-  .prizes .inner ul {
-    padding-left: 30px;
-  }
-
-  .prizes .inner li {
-    font-style: normal;
-    font-size: 18px;
-  }
-
-  .prizes .inner li i {
-    font-size: 20px;
-  }
-
-  .prizes .prize-boxes .gif {
-    display: block;
   }
 
   .prizes .register-btn {
     width: max-content;
-  }
-
-  .prizes .content .inner {
-    width: 80%;
-  }
-
-  .prizes .content .inner ul {
-    width: 100%;
-    padding-left: 0 !important;
-    list-style-type: square;
-    list-style-position: inside;
-  }
-
-  .prizes .content .inner ul li {
-    line-height: 30px;
-    width: 100%;
-    font-size: 18px !important;
   }
 
   /* prizes ends */
@@ -1059,12 +996,25 @@ to align it properly */
     width: 100%;
   }
 
-  .for-small-screen {
-    margin-top: 50px;
+  .prizes .content .card {
+    width: 90%;
   }
+}
 
-  .for-small-screen img {
-    width: 200px;
-    height: 200px;
-  }
+/* Styling for scrollbar  */
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: rgba(37, 37, 78, 0.808);
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+  background-color: #f5f5f5;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  box-shadow: inset 0px 0px 5px rgba(26, 25, 25, 0.521);
+  background-color: #570885;
 }

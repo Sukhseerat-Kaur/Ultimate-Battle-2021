@@ -4,12 +4,21 @@ const registerSection = document.querySelector(".register-section");
 const crossBtn = document.querySelector(".cross-icon");
 const formSubmitted = document.querySelector(".form-submitted");
 
+// add pop-up
 registerBtn.forEach((btn) => {
-  btn.addEventListener("click", () =>
-    registerSection.classList.add("register-pop-up")
-  );
+  btn.addEventListener("click", (e) => {
+    registerSection.classList.add("register-pop-up");
+  });
 });
 
+// when clicked outside form, remove the form popup
+registerSection.addEventListener("click", function (e) {
+  if (e.target.classList.value == "regi-container") {
+    registerSection.classList.remove("register-pop-up");
+  }
+});
+
+// cross button to remove popup
 crossBtn.addEventListener("click", () =>
   registerSection.classList.remove("register-pop-up")
 );

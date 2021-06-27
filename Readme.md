@@ -1,14 +1,12 @@
 # ULTIMATE BATTLE 2021
 
-![Project Image](project-image-url)
-
 ---
 
 ### TABLE OF CONTENTS
 
 - [Description](#description)
 - [Technologies Used](#technologies-used)
-- [References](#references)
+- [References And Credits](#references-and-credits)
 - [Issues Faced And Lesson Learnt](#issues-faced-and-lesson-learnt)
 
 ---
@@ -46,12 +44,14 @@ The website conatains all the information of the upcoming events that are going 
 - THE PRIZES SECTION :
   Join a video game tournament and win cash with your skills! Play PS4 or Xbox One games alone or with your team and beat the competition!
 
-  Look for: Customised GIF of prizes.
+  Look for: hover effect on prize cards.
 
 - THE CONTACT US SECTION :
   Contains the Social-media Links where you can contact us.
 
   Look for: Hover effect on Social-media icons.
+
+- DO NOT forget to take a look at the custom made scroll-bar.
 
 [Back To The Top](#ultimate-battle-2021)
 
@@ -67,7 +67,7 @@ The website conatains all the information of the upcoming events that are going 
 
 ---
 
-## REFERENCES
+## REFERENCES AND CREDITS
 
 - CSS Documentation : https://devdocs.io/css/
 
@@ -76,6 +76,8 @@ The website conatains all the information of the upcoming events that are going 
 - Font Awesome : https://fontawesome.com/
 
 - Pinterest : https://in.pinterest.com/
+
+- Unsplash : https://unsplash.com/
 
 [Back To The Top](#ultimate-battle-2021)
 
