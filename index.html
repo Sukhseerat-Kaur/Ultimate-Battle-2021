@@ -14,27 +14,27 @@
   <body>
     <!--Landing page starts here  -->
 
-    <section class="landing">
+    <section id="home" class="landing">
       <!-- Navbar -->
-      <navbar class="nav">
+      <nav id="nav">
         <h1 class="logo"><a href="./index.html">ULTIMATE</a></h1>
         <ul>
-          <li><a href="#" class="current">Home</a></li>
-          <li><a href="#">Prizes</a></li>
-          <li><a href="#">Contact Us</a></li>
-          <li>
-            <button class="event-btn">
-              <a href="#">Events</a>
-            </button>
-          </li>
+          <li><a href="#home" class="current">Home</a></li>
+          <li><a href="#event">Events</a></li>
+          <li><a href="#prizes">Prizes</a></li>
+          <li><a class="contact" href="#contact">Contact Us</a></li>
         </ul>
-      </navbar>
+        <button class="icon" id="toggle">
+          <div class="line line1"></div>
+          <div class="line line2"></div>
+        </button>
+      </nav>
       <!-- Header -->
       <header class="header">
-        <h1>ULTIMATE TOURNAMENT FOR GAMERS</h1>
+        <h1>ULTIMATE BATTLE FOR ULTIMATE GAMERS</h1>
         <p>
-          Compete and win games to get prizes like never before, $0 registration
-          fees
+          Play, compete, enjoy and win unbelievably exclusive prizes like never before, $0 registration
+          fee
         </p>
         <button class="register-btn glow-on-hover">Register</button>
       </header>
@@ -42,12 +42,13 @@
     <!--Landing page ends here  -->
 
     <!--events page starts here-->
-    <section class="events">
+    <section id="event" class="events">
+      <div class="heading"><h2>Upcoming Events</h2></div>
       <div class="container">
         <!-- row1 starts -->
         <div class="row1">
-          <div class="img1 event-img"></div>
-          <div class="info">
+          <div class="img1 event-img show-on-scroll left"></div>
+          <div class="info show-on-scroll right">
             <h3 class="title">Play 5v5 battle tournamet</h3>
             <p class="text">
               Ready to take on opponents with different skills and flex your
@@ -65,7 +66,8 @@
         <!-- row1 ends -->
         <!-- row2 starts -->
         <div class="row2">
-          <div class="info">
+          <div class="img2 event-img show-on-scroll right hide-on-large"></div>
+          <div class="info show-on-scroll left">
             <h3 class="title">Play 1 vs 99 battle tournamet</h3>
             <p class="text">
               Fight against decisive battle against 99 players and reclaim your
@@ -80,13 +82,13 @@
             </p>
             <p class="venue">Venue: JaiPubg-VC @Ultimate-Discord</p>
           </div>
-          <div class="img2 event-img"></div>
+          <div class="img2 event-img show-on-scroll right hide-on-small"></div>
         </div>
         <!-- row2 ends -->
         <!-- row3 starts -->
         <div class="row3">
-          <div class="img3 event-img"></div>
-          <div class="info">
+          <div class="img3 event-img show-on-scroll left"></div>
+          <div class="info show-on-scroll right">
             <h3 class="title">Play 5v5 battle tournamet</h3>
             <p class="text">
               Take part in the classic battle of cs:go and win exciting prizes
@@ -106,24 +108,37 @@
     <!--events page ends here-->
 
     <!--Prizes Section Starts Here -->
-    <section class="prizes">
-      <!--transparent rectangle-->
-      <!-- <div class="rect"></div> -->
-      <div class="prize-boxes">
-        <!-- <div class="box">
-          <img class="prize-img1" src="./images/prizes-02.svg" alt="first prize" />
-          <img class="prize-img2" src="./images/prizes-01.svg" alt="second prize" />
-          <img class="prize-img3" src="./images/prizes-03.svg" alt="third prize" />
-        </div> -->
-        <img src="./images/gifs5.gif" alt="" style="width: 800px; height: 800px;">
-
-      </div>
+    <section id="prizes" class="prizes">
       <div class="heading">
         <h2>WIN ULTIMATE PRIZES IN ULTIMATE BATTLES</h2>
       </div>
-      <div class="inner">
-        <img class="tin-bande" src="./images/leader3.png" alt="animated leader image" />
+      <div class="content">
+        <div class="prize-boxes">
+          <div class="gif"><img src="./images/gifs2.gif" alt="" style="width: 100%; height: 100%;"></div>
+          <div class="for-small-screen">
+            <img src="./images/prizes-01.svg" alt="">
+            <img src="./images/prizes-02.svg" alt="">
+            <img src="./images/prizes-03.svg" alt="">
+          </div>
+        </div>
+      
+        <div class="inner">
+          <h3>Participate and get chance to win exciting prizes like:  </h3>
+          <div>
+            <ul>
+              <li>Prize Money upto $2.25 million <i class="fas fa-sack-dollar fa-2x"></i></li>
+              <li>Gaming PC <i class="fas fa-desktop fa-2x"></i></li>
+              <li>PS5 <i class="fas fa-gamepad fa-2x"></i></li>
+              <li>XBOX <i class="fab fa-xbox fa-2x"></i></li>
+              <li>Gaming Headphones and Keyboards <i class="fas fa-headphones fa-2x"></i></li>
+              <li>and many more ....</li>
+            </ul>
+          </div>  
+          <!-- <img class="tin-bande" src="./images/leader3.png" alt="animated leader image" /> -->
+          
+        </div>
       </div>
+      <button class="register-btn glow-on-hover">Register Now!</button>
     </section>
     <!-- Prizes Section Ends Here -->
     <!-- Register Section Starts Here -->
@@ -136,15 +151,15 @@
             <span class="cross-icon"><i class="far fa-times"></i></span>
           </div>
           <div class="input-container">
-            <input type="text" id="name" required>
+            <input type="text" id="name" required autocomplete="off">
             <label for="name">Name:</label>
           </div>
           <div class="input-container">
-            <input type="text" id="gname" required >
+            <input type="text" id="gname" required autocomplete="off">
             <label for="gname">Gamer-Name:</label>
           </div>
           <div class="input-container">
-            <input class="email" type="type" id="email" required >
+            <input class="email" type="text" id="email" required autocomplete="off" >
             <label for="email">Email:</label>
           </div>
           <div class="select-container">
@@ -157,15 +172,26 @@
             </select>  
             <br>
           <div class="input-container">
-            <button class="submitBtn">Submit</button>
+            <button class="submit-btn">Submit</button>
           </div>
           </div>
         </form>
       </div>
     </section>
 <!-- Register Section Ends Here -->
-    
-    <footer class="footer">
+
+<!-- FORM SUBMITTED STARTS -->
+<section class="form-submitted" >
+  <div class="align">
+    <h1>Form has been succesfully submitted!</h1>
+    <h4>Keep an eye out on email notification, we will send you more details</h4>
+    <p>you can also join our <b>discord</b> to get more updates!</p>
+  </div>
+</section>
+<!-- FORM SUBMITTED ENDS -->
+
+<!-- footer section begins here -->
+    <footer id="contact" class="footer">
         <div class="main-box">
             <div class="game-logos">
                 <ul>
@@ -176,26 +202,37 @@
                 </ul>
             </div>
 
-            <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
             <div class="wrapper">
                 <ul>
-                    <li class="facebook"><a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
-                    <li class="twitter"><a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
-                    <li class="instagram"><a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
-                    <li class="google"><a href="#"><i class="fa fa-google fa-2x" aria-hidden="true"></i></a></li>
-                    <li class="whatsapp"><a href="#"><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></a></li>
+                    <li class="facebook">
+                      <a href="#"><i class="fab fa-facebook fa-2x" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="twitter"><a href="#">
+                      <i class="fab fa-twitter fa-2x" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="instagram">
+                      <a href="#"><i class="fab fa-instagram fa-2x" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="discord">
+                      <a href="#"><i class="fab fa-discord fa-2x" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="whatsapp">
+                      <a href="#"><i class="fab fa-whatsapp fa-2x" aria-hidden="true"></i></a>
+                    </li>
                 </ul>
             </div>
-
         </div>
         <div class="outer-footer">
           Copyright &copy; Team ULTIMATE. All Rights Reserved
-          
         </div>
     </footer> 
+    <!-- footer section ends here -->
     </body>
     
 
     <script src="./script.js"></script>
   </body>
 </html>
+
+
+
