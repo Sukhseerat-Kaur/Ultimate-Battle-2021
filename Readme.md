@@ -1,6 +1,6 @@
 # ULTIMATE BATTLE 2021
 
-![Project Image](project-image-url)
+[Link to the website](https://sukhseerat-kaur.github.io/Ultimate-Battle-2021/)
 
 ---
 
